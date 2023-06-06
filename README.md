@@ -1,6 +1,3 @@
-
-
-
 # Repository Name
 
 ## Description
@@ -38,17 +35,17 @@ Follow the steps below to set up and test the CloudWatch alarm:
 
 3. Initialize the Terraform configuration by running the following command:
 
-   ```
-terraform init
-   ```
-
+```bash
+Run
+  terraform init
+```
 4. Create the necessary AWS resources by running the following command:
 
-   ```
-terraform apply
-   ```
-
-   This will create the VPC, SNS topic, CloudWatch alarm, subnet, security group, internet gateway, route table, route table association, and EC2 instance.
+```bash
+Run
+  terraform apply
+```
+This will create the VPC, SNS topic, CloudWatch alarm, subnet, security group, internet gateway, route table, route table association, and EC2 instance.
 
 5. Perform a CPU stress test on the EC2 instance to trigger the CloudWatch alarm. Monitor the CPU usage in the AWS Management Console.
 
@@ -60,14 +57,12 @@ terraform apply
 
 To clean up and delete the AWS resources created by this repository, run the following command:
 
+```bash
+Run
+  terraform destroy
 ```
-terraform destroy
-```
-
 ## Conclusion
 
 By following the steps outlined above, you can set up a CloudWatch alarm that tracks CPU usage on an EC2 instance and sends alerts using Amazon SNS when the CPU exceeds 80%. Additionally, you can configure an alternative action to reboot the EC2 instance. Feel free to explore the code and customize it further to meet your specific requirements.
 
-If you have any questions or encounter any issues, please don't hesitate to reach out.
-```
 
